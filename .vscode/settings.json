@@ -1,0 +1,9 @@
+{
+  "js/ts.preferences.importModuleSpecifierEnding": "js",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+
+  "cSpell.words": ["envalid", "fieldnerve", "UUIDV"]
+}
