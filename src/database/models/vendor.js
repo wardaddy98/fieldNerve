@@ -83,15 +83,15 @@ const Vendor = sequelize.define('vendor', {
 )
 
 
-Vendor.hasMany(VendorDocument),
-    VendorDocument.belongsTo(Vendor, {
-        foreignKey: {
-            allowNull: false,
-            name: 'vendorId'
+Vendor.hasMany(VendorDocument);
+VendorDocument.belongsTo(Vendor, {
+    foreignKey: {
+        allowNull: false,
+        name: 'vendorId'
 
-        },
-        onDelete: 'CASCADE'
-    })
+    },
+    onDelete: 'CASCADE'
+})
 
 
 export default Vendor;

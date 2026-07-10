@@ -1,15 +1,8 @@
+import { StatusCodes } from 'http-status-codes';
 import _ from "lodash";
 import { BadRequestError } from "../../utils/handleError.js";
 import { handleResponse } from "../../utils/handleResponse.js";
 import { createVendor, findVendorByEmail } from "./service.js";
-import { StatusCodes } from 'http-status-codes'
-
-export const handleGetVendors = (req, res) => {
-
-
-    return res.json('Test')
-}
-
 
 
 export const handleCreateVendor = async (req, res) => {
